@@ -127,7 +127,7 @@ form button:hover {
 
 /* Botones de selección de rol */
 button {
-    background-color: #d4af37;
+    background-color: rgb(212, 175, 55);
     color: #1c1c1c;
     padding: 10px 20px;
     border: none;
@@ -162,3 +162,71 @@ footer {
     color: #fff;
     width: 100%;
 }
+/* Estilos para pantallas grandes (escritorio) */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image-container {
+    width: 250px; /* Tamaño máximo de contenedor de imagen en escritorio */
+    margin: 10px;
+}
+
+.parallelogram-img {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    transform: skew(-20deg);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 70%; /* Reduce el tamaño del contenedor de imagen en móviles */
+        margin: 10px 0;
+    }
+
+    .parallelogram-img {
+        width: 100%;
+        transform: skew(0deg);
+        border-radius: 8px;
+    }
+
+    .image-description {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 10px;
+        transform: none;
+    }
+}
+
+    /* Ajustes de cabecera */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
