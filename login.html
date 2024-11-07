@@ -3,30 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Iniciar Sesión</h1>
-        </div>
-    </header>
-
-    <section class="main-content">
-        <form action="role-selection.html" method="post">
-            <label for="username">Nombre de usuario:</label>
+<body class="auth-page">
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="login_process.php" method="post">
+            <label for="username">Usuario:</label>
             <input type="text" id="username" name="username" required>
-            
+
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Iniciar Sesión</button>
+            <button type="submit" class="btn-primary">Ingresar</button>
+            <p class="register-link">¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
         </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Professional Service. Todos los derechos reservados.</p>
-    </footer>
+    </div>
 </body>
 </html>
