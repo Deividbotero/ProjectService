@@ -230,3 +230,163 @@ footer {
         margin: 5px 0;
     }
 
+/* Estilos para el contenedor del mapa */
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra el mapa horizontalmente */
+    margin-top: 20px; /* Espacio entre las imágenes y el mapa */
+    padding: 10px;
+}
+
+.map-container iframe {
+    width: 100%; /* Hace que el mapa ocupe el ancho disponible */
+    max-width: 500px; /* Ajusta el ancho máximo del mapa */
+    height: 500px; /* Altura del mapa */
+    border-radius: 50px; /* Bordes redondeados para dar estilo */
+    box-shadow: 0 10px 12px rgba(255, 215, 0); /* Sombra para darle profundidad */
+    border: 4px solid rgb(255, 215, 0); /* Agrega un borde dorado de 3px */
+}
+
+/* Estilo para la frase de compromiso */
+.commitment-phrase {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.197); /* Fondo oscuro semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 215, 0);
+}
+
+.testimonials {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+.testimonial-card {
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 1px solid gold;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gold;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.back-to-top:hover {
+    background-color: #d4af37;
+}
+
+.auth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Titles and Labels */
+.form-container h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ccc;
+    text-align: left;
+}
+
+/* Input Fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: gold;
+}
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: gold;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e5c100;
+}
+
+/* Links for Registration/Login */
+.register-link, .login-link {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.register-link a, .login-link a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
