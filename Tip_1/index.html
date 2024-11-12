@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/Logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Professional Service</h1>
+        <select id="roleSelect">
+            <option value="">Selecciona un Servicio</option>
+            <option value="plomeria">Plomería</option>
+            <option value="carpinteria">Carpintería</option>
+            <option value="mecanica">Mecánica</option>
+        </select>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <!-- Imagen de portada con enlace al video en YouTube -->
+            <a href="https://youtube.com/shorts/xIZwj_pRxpc?feature=shared" target="_blank">
+                <img src="images/esclusive.jpg" alt="Video Profesional Service" class="video-thumbnail">
+            </a>
+            <p class="eslogan">"Llevamos soluciones a cada rincón, brindando excelencia y compromiso en cada servicio."</p>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <div id="profileContainer" class="profile-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
